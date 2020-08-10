@@ -1,0 +1,64 @@
+// ACESSANDO O CONTAINER NA PAGINA E MODIFICANDO A LARGURA E A COR DE FUNDO
+document.querySelector("#container").style.width = "500px"
+document.querySelector("#container").style.backgroundColor="red"
+
+//COMANDO DO SERVIDOR
+npm init -y = vai ser responsavel pelo gerenciamento de pacotes, quero começar um projeto nessa raiz do projeto
+vai criar um arquivo package.json
+-- vamo precisar só do "name" e "script"
+
+//baixar mais pacotes para rodar o servidor
+
+npm install express = biblioteca de ideias
+
+package-lock.json = vai mapear nossas deprendencias da nossa aplicação, editou o arquivo package.json
+colocando * "dependencies": {
+    "express": "^4.17.1"
+  } *
+
+//CRIANDO SERVIDOR
+server.js
+
+comando para levantar servidor
+node src/server.js
+
+//ESSA FERRAMENTE REINICIA O SERVIDOR QUANDO O ARQUIVO SERVER.JS é editado
+npm install nodemon -D, vai instalar num lugar especifico
+depois de pronto ele edita o arquivo package.json
+-- Editar o arquivo package.json, na parte de "scripts"
+ "scripts": {
+    "dev": "nodemon src/server.js"
+  },
+
+//agora para levantar o servidor
+npm run dev
+
+//instalando o motor para rodar no template dinamico
+ npm install nunjucks
+
+//////////////////////////////////////////////////////////////////////////////////////
+
+//instalar o pacote do SQLITE
+npm install sqlite-async
+
+//instalar pluggin no vscode
+SQLite
+alexcvzz
+
+//////////////////////////////////////////////////////////////////////////////////////
+# Desafios
+
+## 01 - Página de sucesso
+
+- Mostrar página de sucesso após o cadastro do proffy
+- aguardar 2 segundos na página e redirecionar para a listagem dos proffys, com filtro
+    - use setTimeout para aguardar os 2 segundos
+    - location.href = ""
+
+## 02 - Correção de bugs
+
+- Não permitir o usuário colocar um novo campo de dia e horário, se o dia e hora anterior estiver vazio
+- Funcionalidade de deletar um campo de dia e hora
+
+
+
