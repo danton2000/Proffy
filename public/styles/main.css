@@ -1,0 +1,78 @@
+:root{/* ELEMENTO RAIZ, --variaveis no css */
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #9871F5;
+    --color-primary-light: #916BEA;
+    --color-primary: #8257E5;
+    --color-primary-dark: #774DD6;
+    --color-primary-darker: #6842C2;
+    --color-secondary: #04D361;
+    --color-secondary-dark: #04BF58;
+    --color-title-in-primary: #FFFFFF;
+    --color-text-in-primary: #D4C2FF;
+    --color-text-title: #32264D;
+    --color-text-complement: #9C98A6;
+    --color-text-base: #6A6180;
+    --color-line-in-white: #E6E6F0;
+    --color-input-background: #F8F8FC;
+    --color-button-text: #FFFFFF;
+    --color-box-base: #FFFFFF;
+    --color-box-footer: #FAFAFC;
+    --color-small-info: #C1BCCC;
+
+    /* tamanho da fonte, padrão: 16x, 100%, 1rem */
+    /* tamnho px é não é maleavel */
+    font-size: 60%; /* controle das medidas rem */
+    /* rem é relativo a fonte que foi setado no root */
+
+}
+/*
+    TESTE
+    #container{
+    modelo de caixa 
+    border: 1px solid red;
+    padding: 40px;   preencheminto 
+    margin: 60px; Só um valor, estou me referindo aos 4 cantos 
+    width: 300px; largura 
+    height: 300px; altura 
+
+} 
+*/
+
+
+*{/* todos os elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* ele soma o padding com o widht pra tudo ficar em 100px */
+}
+
+html, body{
+    height: 100vh;/*altura*//*é adaptaçaõ do que a gente consegue ver de altura da viewport, quebra ela em 100 pedaçinhos*/
+}
+
+body{
+    background-color: var(--color-background);
+    display: flex; /* todos os elementos tem que ser flexiveis, 1 ao lado do outro */
+    align-items: center;/*alinhamento central*/
+    justify-content: center;/*justificar ele no centro*/
+}
+
+body, input, button, textarea{
+    /* font: 500 1.6rem Poppins; */
+    font-weight: 500;/*peso da fonte*/
+    font-family: Poppins;/*fonts*/
+    font-size: 1.6rem;
+    color: var(--color-text-base)
+}
+
+#container{
+    width: 90vw; /*largura*/
+    max-width: 700px;
+}
+
+@media(min-width: 700px){
+    :root{
+        font-size: 62.5%; /* todo 1rem vai ser relativo a 10px */
+    }
+}
+
+
